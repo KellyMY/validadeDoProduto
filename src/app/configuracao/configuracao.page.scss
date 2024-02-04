@@ -1,0 +1,33 @@
+
+.red{
+    background: red;
+    --color: white;
+  }
+  
+  .orange{
+    background: orange;
+    --color: black;
+  }
+  
+  .yellow{
+    background: yellow;
+    --color: black;
+  }
+  
+  .green{
+    background: rgb(86, 255, 86);
+    --color: black;
+  }
+  
+  .grey{
+    background: grey;
+    --color: white;
+  }
+  
+  ion-badge {
+    // --background: purple;
+    
+    --padding-end: 20px;
+    --padding-start: 20px;
+    border-radius:20px;
+  }

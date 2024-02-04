@@ -1,0 +1,251 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Produto</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col [sizeLg]="true">
+        <ion-searchbar></ion-searchbar>
+      </ion-col>
+      <ion-col>
+        <ion-fab-button side="end">
+          <ion-icon name="chevron-up"></ion-icon>
+          <!-- <svg xmlns='http://www.w3.org/2000/svg' style="fill: #fff; width: 35px;" class='ionicon' viewBox='0 0 512 512'><circle cx='256' cy='272' r='64'/><path d='M432 144h-59c-3 0-6.72-1.94-9.62-5l-25.94-40.94a15.52 15.52 0 00-1.37-1.85C327.11 85.76 315 80 302 80h-92c-13 0-25.11 5.76-34.07 16.21a15.52 15.52 0 00-1.37 1.85l-25.94 41c-2.22 2.42-5.34 5-8.62 5v-8a16 16 0 00-16-16h-24a16 16 0 00-16 16v8h-4a48.05 48.05 0 00-48 48V384a48.05 48.05 0 0048 48h352a48.05 48.05 0 0048-48V192a48.05 48.05 0 00-48-48zM256 368a96 96 0 1196-96 96.11 96.11 0 01-96 96z'/></svg> -->
+        </ion-fab-button>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="center">
+
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+    <!-- <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path stroke-linecap='round' stroke-linejoin='round' d='M256 112v288M400 256H112' class='ionicon-fill-none ionicon-stroke-width'/></svg> -->
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-list side="start">
+      <ion-fab-button color="tertiary">
+        <ion-icon name="chevron-up"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button color="medium">
+        <ion-icon name="chevron-up"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab-list>
+</ion-fab>
+
+<style>
+  :root {
+    /**
+   * Setting the variables for DEMO purposes only.
+   * Values will be set automatically when building an iOS or Android app.
+   */
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 20px;
+  }
+
+  ion-fab {
+    margin-top: var(--ion-safe-area-top, 0);
+    margin-bottom: var(--ion-safe-area-bottom, 0);
+  }
+</style>
+
+<ion-content fullscreen="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <img alt="Silhouette of mountains" (click)="redicionaDetalhes()"
+                  src="https://ionicframework.com/docs/img/demos/card-media.png" />
+                <div style="position: absolute;" (click)="redicionaDetalhes()">
+                  <div style="position: relative;">
+                    <ion-button style="position:relative; top:-130px; left: 200px">
+                      <!-- <ion-icon name="more"></ion-icon> -->
+
+                      <!-- <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'>
+                        <path stroke-linecap='round' stroke-miterlimit='10' d='M80 160h352M80 256h352M80 352h352'
+                          class='ionicon-fill-none ionicon-stroke-width' />
+                      </svg> -->
+                      <ion-icon name="add"></ion-icon>
+                    </ion-button>
+                    <!-- <ion-icon name="more">xx</ion-icon> -->
+                    <ion-popover>
+                      <ion-content class="ion-padding">Hello World!</ion-content>
+                    </ion-popover>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-card-header>
+            <ion-card-title>Nome do produto
+
+
+            </ion-card-title>
+            <ion-card-subtitle>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-badge>10/01/2024</ion-badge>
+                  </ion-col>
+                  <ion-col>
+                    <ion-badge side="left">Vencido</ion-badge>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+            </ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<!-- <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">produto</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+
+<script>
+  const button = document.querySelector('ion-button');
+  const popover = document.querySelector('ion-popover');
+
+  button.addEventListener('click', (e) => {
+    popover.event = e;
+    popover.isOpen = true;
+  });
+
+  popover.addEventListener('didDismiss', () => (popover.isOpen = false));
+</script>
