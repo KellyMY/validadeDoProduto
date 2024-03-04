@@ -26,9 +26,14 @@ export const routes: Routes = [
   {
     path: 'detalhe-produto',
     loadComponent: () => import('./detalhe-produto/detalhe-produto.page').then( m => m.DetalheProdutoPage)
-  },  {
+  },
+  {
     path: 'photo',
     loadComponent: () => import('./photo/photo.page').then( m => m.PhotoPage)
+  },
+  {
+    path: 'add-produto',
+    loadComponent: () => import('./add-produto/add-produto.page').then( m => m.AddProdutoPage)
   },
 
 ];

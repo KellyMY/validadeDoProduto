@@ -30,7 +30,14 @@ export class PhotoService {
     });
 
     const savedImageFile = await this.savePicture(capturedPhoto);
-    console.log(savedImageFile)
+    // console.log(savedImageFile)
+
+    if(savedImageFile){
+      var photo_blob = Array();
+
+      photo_blob.push('add-produto',savedImageFile.filepath)
+    }
+
     // this.photos.unshift(savedImageFile);
 
     // Preferences.set({
