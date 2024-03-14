@@ -46,7 +46,7 @@ export class AddProdutoPage implements OnInit {
         local: this.local,
         imagem: this.imagem
       }
-      this.provider.Api(dados, 'produto/inserir.php').subscribe(
+      this.provider.Api(dados, 'inserir.php').subscribe(
         data => {
           this.router.navigate(['produto'])
         }
@@ -57,7 +57,8 @@ export class AddProdutoPage implements OnInit {
   async mensagemSucesso(){
     const toast = await this.toastController.create({
       message: 'Your settings has been saved.',
-      duration:2000
+      duration:2000,
+      color: 'success'
     });
     toast.present();
   }

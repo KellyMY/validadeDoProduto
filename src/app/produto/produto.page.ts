@@ -38,4 +38,8 @@ export class ProdutoPage implements OnInit {
     this.router.navigate(['photo']);
   }
 
+  redirecionaAdicionar(){
+    this.router.navigate(["add-produto"]);
+  }
+
 }
