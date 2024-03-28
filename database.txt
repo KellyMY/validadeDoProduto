@@ -1,0 +1,16 @@
+create database validadeproduto;
+
+create table produto(
+produto_id int AUTO_INCREMENT,
+PRIMARY key(produto_id),
+    produto_nome  text,
+    produto_imagem blob
+);
+
+create table data(
+    data_id int AUTO_INCREMENT,
+    PRIMARY key (data_id),
+    produto_id int,
+    data_horario date,
+    data_local text
+)

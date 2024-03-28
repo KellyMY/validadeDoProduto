@@ -34,4 +34,8 @@ export class ProdutoPage implements OnInit {
     // window.location.href = "./detalhe-produto"
   }
 
+  redirecionaCamera(){
+    this.router.navigate(['photo']);
+  }
+
 }

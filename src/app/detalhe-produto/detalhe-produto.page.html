@@ -12,18 +12,81 @@
 
 <ion-content [fullscreen]="true">
   <ion-grid>
+
     <ion-row>
-      <ion-title>Nome do Produto</ion-title>
+      <ion-col>
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-badge class="danger">Vencido</ion-badge>
+          </ion-col>
+          <ion-col>
+            <ion-button>...</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-title>Nome do Produto</ion-title>
+        </ion-row>
+        <ion-row>
+
+<ion-col>
+  <ion-text>Primeira data vencimento: <strong>10/10/2020</strong></ion-text>
+
+</ion-col>        </ion-row>
+      </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <img alt="Silhouette of mountains"
-                  src="https://ionicframework.com/docs/img/demos/card-media.png" />
-      </ion-col>
-      <ion-col>
-        <ion-badge class="danger">Vencido</ion-badge>
-        
-      </ion-col>
+      <ion-title>Todas as validades:</ion-title>
+    </ion-row>
+    <ion-row>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-text>Status</ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text>Vencimento</ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text>Local</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-badge class="danger">Vencido</ion-badge>
+          </ion-col>
+          <ion-col>
+            <ion-text><strong>10/10/2020</strong></ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text>caixa vermelha - sala</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-badge class="warning">Perto vencimento</ion-badge>
+          </ion-col>
+          <ion-col>
+            <ion-text><strong>02/02/2023</strong></ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text>pote verde - cozinha</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-badge class="success">Dentro do prazo</ion-badge>
+          </ion-col>
+          <ion-col>
+            <ion-text><strong>04/07/2004</strong></ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text>isopor - sala</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-row>
   </ion-grid>
   <!-- <ion-header collapse="condense">

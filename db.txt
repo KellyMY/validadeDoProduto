@@ -1,0 +1,9 @@
+create database validadeproduto;
+user validadeproduto;
+
+create table produto(
+    produto_id int auto_increment,
+    primary key(produto_id),
+    produto_nome varchar(200),
+    produto_imagem blob
+);

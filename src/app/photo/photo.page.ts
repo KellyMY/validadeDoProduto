@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule, IonModal } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 import { PhotoService } from '../services/photo.service';
 
 
@@ -11,18 +11,18 @@ import { PhotoService } from '../services/photo.service';
   styleUrls: ['./photo.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
-});
+})
 
-@ViewChild(IonModal);
+// @ViewChild(IonModal);
 export class PhotoPage implements OnInit {
-  modal= IonModal;
+  // modal= IonModal;
   constructor(public photoService: PhotoService) { }
 
 
 
 
-  message: string = 'This modal example uses triggers to automatically open a modal when the button is clicked.';
-  name: string = '';
+  // message: string = 'This modal example uses triggers to automatically open a modal when the button is clicked.';
+  // name: string = '';
 
   // addPhotoToGallery() {
   //   this.photoService.addNewToGallery();
@@ -38,17 +38,17 @@ export class PhotoPage implements OnInit {
   }
 
   cancel() {
-    this.modal.dismiss(null, 'cancel');
+    // this.modal.dismiss(null, 'cancel');
   }
 
   confirm() {
-    this.modal.dismiss(this.name, 'confirm');
+    // this.modal.dismiss(this.name, 'confirm');
   }
 
   onWillDismiss(event: Event) {
-    const ev = event as CustomEvent;
-    if (ev.detail.role === 'confirm') {
-      this.message = `Hello, ${ev.detail.data}!`;
-    }
+    // const ev = event as CustomEvent;
+    // if (ev.detail.role === 'confirm') {
+    //   this.message = `Hello, ${ev.detail.data}!`;
+    // }
   }
 }
