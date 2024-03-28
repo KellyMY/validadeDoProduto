@@ -2,13 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-<<<<<<< HEAD
-=======
 import { ActivatedRoute, Router } from '@angular/router';
 import { Api } from '../services/api';
 import { Action } from 'rxjs/internal/scheduler/Action';
 import { ToastController } from '@ionic/angular/standalone';
->>>>>>> c2f1482a0da3f42c7b9b65d8f98a7266af8786d4
 
 @Component({
   selector: 'app-add-produto',
@@ -25,11 +22,6 @@ export class AddProdutoPage implements OnInit {
   imagem: string = "";
 
   // imagem_gerada: string = photo_blob.get('data');
-<<<<<<< HEAD
-  constructor() { }
-
-  ngOnInit() {
-=======
   constructor(
     private router: Router,
     private provider: Api,
@@ -69,7 +61,6 @@ export class AddProdutoPage implements OnInit {
       color: 'success'
     });
     toast.present();
->>>>>>> c2f1482a0da3f42c7b9b65d8f98a7266af8786d4
   }
 
 }
