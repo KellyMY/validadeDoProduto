@@ -8,6 +8,7 @@ import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 import { provideHttpClient } from '@angular/common/http';
+import { addIcons } from 'ionicons';
 
 if (environment.production) {
   enableProdMode();

@@ -21,8 +21,8 @@ import {
 export class AppComponent {
   public appPages = [
     { title: 'Inbox', url: '/folder', icon: 'home' },
-    // { title: 'Usuário', url: '/usuario', icon: 'people' },
-    // { title: 'Configuração', url: '/configuracao', icon: 'settings' },
+    { title: 'Usuário', url: '/usuario', icon: 'people' },
+    { title: 'Configuração', url: '/configuracao', icon: 'settings' },
     { title: 'Produto', url: '/produto', icon: 'pizza' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

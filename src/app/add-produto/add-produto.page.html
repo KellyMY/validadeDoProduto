@@ -11,36 +11,54 @@
     </ion-toolbar>
   </ion-header>
 </ion-content>
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col>
+      <ion-input label="Nome do produto" label-placement="floating" fill="outline"
+        placeholder="Ex.: Farinha de milho"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-input label="Data de vencimento" label-placement="floating" fill="outline"
+        placeholder="Ex.: 10/01/2006"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input label="Local armazenado" label-placement="floating" fill="outline"
+        placeholder="Ex.: Caixa de isopor"></ion-input>
+    </ion-col>
+    <ion-col>
+        <ion-button style="width:50%">+</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-input label="Data de vencimento" label-placement="floating" fill="outline"
+        placeholder="Ex.: 10/01/2006"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input label="Local armazenado" label-placement="floating" fill="outline"
+        placeholder="Ex.: Caixa de isopor"></ion-input>
+    </ion-col>
+    <ion-col style="display: flex;">
+      <ion-button style="width:50%">+</ion-button>
+      <ion-button style="width:50%;" color="danger">-</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-button expand="full" color="success">Salvar</ion-button>
 
+  <!-- <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+  <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input> -->
+</ion-content>
 <ion-item>
-  <ion-input
-    label="Enter your name"
-    labelPlacement="stacked"
-    type="text"
-    placeholder="Your name"
-  ></ion-input>
+  <ion-input label="Enter your name" labelPlacement="stacked" type="text" placeholder="Your name"></ion-input>
 </ion-item>
 <ion-item>
-  <ion-input
-    label="Enter your name"
-    labelPlacement="stacked"
-    type="text"
-    placeholder="Your name"
-  ></ion-input>
+  <ion-input label="Enter your name" labelPlacement="stacked" type="text" placeholder="Your name"></ion-input>
 </ion-item>
 <ion-item>
-  <ion-input
-    label="Enter your name"
-    labelPlacement="stacked"
-    type="text"
-    placeholder="Your name"
-  ></ion-input>
+  <ion-input label="Enter your name" labelPlacement="stacked" type="text" placeholder="Your name"></ion-input>
 </ion-item>
 <ion-item>
-  <ion-input
-    label="Enter your name"
-    labelPlacement="stacked"
-    type="text"
-    placeholder="Your name"
-  ></ion-input>
+  <ion-input label="Enter your name" labelPlacement="stacked" type="text" placeholder="Your name"></ion-input>
 </ion-item>
